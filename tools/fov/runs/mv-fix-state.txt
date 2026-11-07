@@ -1,0 +1,5 @@
+agent.multiview=544
+agent.tvhmd=1
+agent.insetviews=2
+agent.capture=2
+agent.insetstate=1

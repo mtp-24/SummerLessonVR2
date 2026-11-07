@@ -1,0 +1,2 @@
+agent.census=1
+agent.fovhw=1
