@@ -1,0 +1,2 @@
+agent.mirrorboth=1
+agent.probe=2

@@ -1,0 +1,7 @@
+agent.hands=0
+agent.insetpp=7
+agent.insetppt=1200
+r.SSR.Quality=0
+r.ShadowQuality=5
+r.AmbientOcclusionLevels=0
+agent.taa=0

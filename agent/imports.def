@@ -1,0 +1,96 @@
+# Functions the agent calls inside the game: <module basename> <symbol>[=<NID>]
+# (imports.inc gives each one its C type, in the same order)
+libkernel.sprx           scePthreadCreate
+libkernel.sprx           scePthreadAttrInit
+libkernel.sprx           scePthreadAttrSetstacksize
+libkernel.sprx           scePthreadAttrDestroy
+libkernel.sprx           scePthreadSelf
+libkernel.sprx           sceKernelUsleep
+libkernel.sprx           sceKernelGetProcessTime
+libkernel.sprx           sceKernelAddUserEvent
+libkernel.sprx           sceKernelAddUserEventEdge
+libkernel.sprx           sceKernelTriggerUserEvent
+libkernel.sprx           sceKernelWaitEqueue
+libkernel.sprx           sceKernelLoadStartModule
+libkernel.sprx           sceKernelGetModuleInfo
+libkernel.sprx           sceKernelGetDirectMemorySize
+libkernel.sprx           sceKernelAllocateDirectMemory
+libkernel.sprx           sceKernelAvailableDirectMemorySize
+libkernel.sprx           sceKernelAvailableFlexibleMemorySize
+libkernel.sprx           sceKernelMapDirectMemory
+libkernel.sprx           sceKernelVirtualQuery
+libkernel.sprx           clock_gettime
+libkernel.sprx           scePthreadGetname
+libkernel.sprx           sceKernelGetAppInfo
+libkernel.sprx           sceKernelStat
+libkernel.sprx           sceKernelGetCompiledSdkVersion
+libkernel.sprx           sceKernelIsNeoMode
+libkernel.sprx           sceKernelIsPs4Process
+libkernel.sprx           sceKernelGetProsperoCompiledSdkVersion
+libkernel.sprx           get_authinfo
+libkernel.sprx           sceKernelGetAppInfoSized=d7xu4QDJw8Q
+libkernel.sprx           scePthreadAttrSetaffinity
+libkernel.sprx           scePthreadAttrSetschedparam
+libkernel.sprx           scePthreadAttrSetinheritsched
+libkernel.sprx           sceKernelMprotect
+libSceUserService.sprx   sceUserServiceGetInitialUser
+# the controller's motion sensors, which Summer Lesson never switches on (play test 1)
+libScePad.sprx           scePadSetMotionSensorState
+libScePad.sprx           scePadSetTiltCorrectionState
+libScePad.sprx           scePadSetVibration
+libSceSystemService.sprx sceSystemServiceGetStatus
+libSceAudioOut.sprx      sceAudioOutGetPortState
+libSceVideoOut.sprx      sceVideoOutOpen
+libSceVideoOut.sprx      sceVideoOutSetBufferAttribute2
+libSceVideoOut.sprx      sceVideoOutRegisterBuffers2
+libSceVideoOut.sprx      sceVideoOutSubmitFlip
+libSceVideoOut.sprx      sceVideoOutEnhancedAttribute=Wu+K43K3ToE
+libSceHmdSetupDialog.sprx sceHmdSetupDialogClose
+# the vblank thread onto the agent's cores (hooks.c)
+libkernel.sprx           scePthreadSetaffinity
+libkernel.sprx           scePthreadSetprio
+# loaded by the game after the agent (resolved before the PS5 libraries load)
+libSceVideodec2.sprx     sceVideodec2QueryComputeMemoryInfo
+libSceVideodec2.sprx     sceVideodec2AllocateComputeQueue
+libSceVideodec2.sprx     sceVideodec2ReleaseComputeQueue
+# in the PS5 libraries the agent loads (resolved once they are up)
+libSceAgc.sprx           sceAgcToolkitA=23LRUSvYu1M
+libSceAgc.sprx           sceAgcToolkitB=BfBDZGbti7A
+libSceAgcDriver.sprx     sceAgcDriverSubmitDcb
+libSceAgcDriver.sprx     sceAgcDriverSubmitAcb
+libSceAgcDriver.sprx     sceAgcDriverSubmitAcbF5=F5ZTyyVUHTs
+libSceAgcDriver.sprx     sceAgcDriverSubmitMultiDcbs
+libSceAgcDriver.sprx     sceAgcDriverSubmitMultiAcbs
+libSceAgcDriver.sprx     sceAgcDriverSetFlip
+libSceHmd2.sprx          sceHmd2Initialize
+libSceHmd2.sprx          sceHmd2Open
+libSceHmd2.sprx          sceHmd2GetDeviceInformation
+libSceHmd2.sprx          sceHmd2GetFieldOfViewWithoutHandle
+libSceHmd2.sprx          sceHmd2ReprojectionQueryBufferSizeAlign
+libSceHmd2.sprx          sceHmd2ReprojectionQueryDisplayBufferSizeAlign
+libSceHmd2.sprx          sceHmd2ReprojectionInitialize
+libSceHmd2.sprx          sceHmd2ReprojectionEnableVrMode
+libSceHmd2.sprx          sceHmd2ReprojectionDisableVrMode
+libSceHmd2.sprx          sceHmd2ReprojectionBeginFrame
+libSceHmd2.sprx          sceHmd2ReprojectionSetParam
+libSceHmd2.sprx          sceHmd2ReprojectionSetRenderConfig
+# eye tracking (fov.c): PS5VR's calls
+libSceHmd2.sprx          sceHmd2GazeGetResult
+libSceHmd2.sprx          sceHmd2InternalGazeStart
+libSceHmd2.sprx          sceHmd2InternalGazeStop
+libSceVrTracker2.sprx    sceVrTracker2QueryMemory
+libSceVrTracker2.sprx    sceVrTracker2Initialize
+libSceVrTracker2.sprx    sceVrTracker2RegisterDevice
+libSceVrTracker2.sprx    sceVrTracker2GetResult
+libSceAgc.sprx           sceAgcCreateShader
+libSceAgcDriver.sprx     sceAgcDriverAddEqEvent
+libSceAgcDriver.sprx     sceAgcDriverDeleteEqEvent
+# what libSceVrHand submits its compute work with: (queue, desc, arg), like SubmitAcbF5
+libSceAgcDriver.sprx     sceAgcDriverSubmitAcbHb3=Hb3p8BJm2PI
+# libSceVrHand: hand tracking, loaded once the headset output runs (hand.c)
+libSceVrHand.sprx        sceVrHandInitialize
+libSceVrHand.sprx        sceVrHandFinalize
+libSceVrHand.sprx        sceVrHandStart
+libSceVrHand.sprx        sceVrHandStop
+libSceVrHand.sprx        sceVrHandGetResult
+libkernel.sprx           sceKernelCreateEqueue

@@ -1,0 +1,17 @@
+build/
+*.o
+*.elf
+agent/nids_gen.h
+agent/hooks.inc
+.DS_Store
+__pycache__/
+dumps/
+release/
+logs/
+tools/local.env
+tests/rec1.*
+tools/ebootmap/xref
+.claude/settings.local.json
+tests/
+.claude/
+tools/.cvars.orig*

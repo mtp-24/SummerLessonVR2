@@ -1,0 +1,6 @@
+agent.mirrorboth=2
+agent.insetaam=2
+agent.insetsnap=2
+agent.insetgaze=9
+agent.taa=11
+agent.capture=382

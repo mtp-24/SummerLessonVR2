@@ -1,0 +1,4 @@
+agent.mirrorboth=2
+agent.taa=1
+agent.capture=310
+agent.hands=0
