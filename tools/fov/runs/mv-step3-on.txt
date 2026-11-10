@@ -1,0 +1,4 @@
+agent.multiview=544
+agent.mirrorboth=1
+agent.census=1
+agent.insetviews=1

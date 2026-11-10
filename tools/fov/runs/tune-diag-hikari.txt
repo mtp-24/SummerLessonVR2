@@ -1,0 +1,6 @@
+# Hikari only: the hiccup run. agent.rtime has run on Hikari 1.00 only; every Hikari run is now 1.02
+# (the newer engine), where it is as untested as on Chisato and Allison: not run without the
+# user's word (docs/SUMMER-LESSON.md, Hikari 1.02)
+agent.hands=0
+agent.rtime=1
+agent.waits=1

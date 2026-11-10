@@ -1,0 +1,11 @@
+agent.hands=60
+agent.tvblank=0
+agent.multiview=600
+agent.insetsize=600
+agent.insetwidth=1200
+agent.insetwin=3
+agent.insetviews=2
+agent.gaze=1
+agent.insetgaze=1
+r.ShadowQuality=5
+r.PostProcessAAQuality=6

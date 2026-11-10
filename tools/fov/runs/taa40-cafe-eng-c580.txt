@@ -1,0 +1,10 @@
+agent.mirrorboth=2
+agent.insetaam=2
+agent.insetsnap=2
+agent.capafter=1000
+agent.capdx=-76
+agent.capdy=-78
+agent.hands=0
+agent.insetgaze=11
+agent.taa=0
+agent.capture=580

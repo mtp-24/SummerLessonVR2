@@ -1,0 +1,5 @@
+agent.hands=60
+agent.multiview=600
+agent.probe=2
+agent.mirrorboth=1
+agent.tvhmd=0
