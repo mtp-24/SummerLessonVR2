@@ -1,0 +1,6 @@
+agent.hands=0
+agent.mirrorboth=1
+agent.tvhmd=0
+agent.probe=3
+r.PostProcessAAQuality=3
+agent.taa=0

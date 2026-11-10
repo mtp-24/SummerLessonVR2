@@ -1,0 +1,6 @@
+# The final verification WITH the palm tracker (the user: the real load), only on the user's
+# explicit go; inset mode, the chosen presets (the agent's own, so no other line), one replay per
+# game: Allison first, then Hikari 1.02 (never run with the tracker by a runner), Chisato last
+# (the hang in stock-mode Chisato came just before the tracker's start was due: cause unknown).
+# Every other run keeps agent.hands=0.
+agent.hands=60

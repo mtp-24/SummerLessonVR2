@@ -1,0 +1,4 @@
+agent.mirrorboth=2
+agent.taadump=1
+agent.taa=1
+agent.hands=0

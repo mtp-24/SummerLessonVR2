@@ -1,0 +1,4 @@
+agent.mirrorboth=0
+agent.insetaam=2
+agent.taa=13
+agent.capture=102

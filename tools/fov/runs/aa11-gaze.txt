@@ -1,0 +1,4 @@
+agent.insetaam=2
+agent.insetsnap=2
+agent.taa=10
+agent.insetgaze=10
