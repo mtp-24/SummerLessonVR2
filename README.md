@@ -120,6 +120,8 @@ doesn't work, look there first.
 
 GPL-3.0-or-later. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+## Support
+
 https://ko-fi.com/mtp24
 
 https://buymeacoffee.com/mtp24
